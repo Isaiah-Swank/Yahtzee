@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yahtzee (HTML/JS)</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hidden images for dice and cup sprites. -->
+  <img id="diceSprite" src="dice.png" alt="Dice Sprite" style="display:none;" />
+  <img id="cupSprite" src="dice-cup.png" alt="Cup Sprite" style="display:none;" />
+
+  <!-- Canvas for the main game screens -->
+  <canvas id="gameCanvas" width="1000" height="700"></canvas>
+
+  <!-- Overlays for user prompts, final results, category selection, etc. -->
+  <div id="overlay" class="overlay">
+    <div class="overlay-content" id="overlayContent">
+      <!-- Content set dynamically in JS -->
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script defer src="index.js"></script>
+</body>
+</html>
